@@ -1,6 +1,9 @@
 
 import pandas as pd
 import numpy as np
+import seaborn as sns
+import matplotlib.pyplot as plt
+from sklearn.impute import KNNImputer
 
 
 
@@ -30,3 +33,17 @@ def float_to_integer(df, list_cols_update):
         
     return df
     
+    
+    
+def num_and_cate(df, num_col, cate_col):
+    sns.boxplot(x=cate_col, y=num_col, data=df)
+    plt.title(f'Correlation of {cate_col} and {num_col}')
+    
+
+def num_and_num (df, col1, col2):
+    
+    fig, axes = plt.subplots(1, 2, figsize=(12, 5))
+    
+    sns.scatterplot(x=df[col1], y=df[col2], ax=axes[0])
+    sns.regplot(x=df[col1], y=df[col2], ax=axes[1])
+    plt.show()
