@@ -1,0 +1,31 @@
+## PROJECT: CANADIAN AIRLINE DATA ANALYSIS
+### ANALYST: Cibele Busnello
+### COMPANY: Adalab
+### DATE: 2025 April 04
+
+### DATA SOURCE:
+- Customer Flight Analysis.csv
+- Customer Loyalty History.csv
+
+The project was divided in 2 phases: 
+
+1. Exploration and cleaning: This phase code's can be found in: 
+    - Notebooks > 1. Initial data analysis & 
+    - Notebooks > 2. Cleaning
+
+2. Visualization: This phase code can be found in:
+    - Notebooks > 3. Data Analysis
+
+
+During phase one, the focus was to understand the raw data, the structure of the data frame, nulls, descriptive data, and possible data cleaning and transformation.
+In order to have it done, sorting methods such as describe, unique, count, info, isnull, duplicated, etc., were used. Generating an initial evaluation before any further action.
+
+Then, moved to the cleaning process, where, supported by a .py file located on the src folder, the transformation started. Duplicates were removed, homogenization of the values (negative values, converting types), categorizing data, and finally merging the tables for the next phase.
+
+All set, we can now have our hands on to the exciting part.
+
+Welcome to phase 2, where with the help of graphs, the data sets were well represented leading to interesting results.
+
+On this notebook, you will see representations using matplotlib and seaborn combined with sorting, subplots, and a sensitive formatting, ready to be exported and support a business presentation with its insights and colors.
+
+Here I invite you to open the file Documentation, which will guide you step by step to each individual graph while you see the analytics and insights.
